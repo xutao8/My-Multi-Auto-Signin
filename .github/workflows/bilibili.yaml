@@ -3,7 +3,8 @@ name: 哔哩哔哩签到
 on:
     workflow_dispatch:
     schedule:
-        - cron: "5 16 * * *"
+    # 每天国际时间 23:20 运行一次, 中国时间 07:20
+        - cron: "20 23 * * *"
     watch:
         types: [started]
 
