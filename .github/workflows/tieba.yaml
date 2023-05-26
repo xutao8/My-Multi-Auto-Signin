@@ -3,7 +3,8 @@ name: 百度签到
 on:
     workflow_dispatch:
     schedule:
-        - cron: "30 04 * * *"
+    # 每天国际时间 23:05 运行一次, 中国时间 07:05
+        - cron: "05 23 * * *"
     watch:
         types: [started]
 
